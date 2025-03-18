@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="red_wine">red_wine</string>
+    <string name="white_wine">white_wine</string>
+    <string name="jin">jin</string>
+    <string name="vodka">vodka</string>
+    <string name="whiskey">whiskey</string>
+    <string name="rum">rum</string>
+</resources>

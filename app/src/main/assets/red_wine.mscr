@@ -1,0 +1,22 @@
+e
+var c
+var p
+set_pgstat_chan 1
+set_pgstat_mode 0
+set_pgstat_chan 0
+set_pgstat_mode 2
+set_max_bandwidth 40
+set_range_minmax da -500m 1300m
+set_range ba 590u
+set_autoranging ba 1152344p 590u
+set_e -500m
+cell_on
+meas_loop_cv p c -500m -500m 1300m 10m 100m nscans(1)
+  pck_start
+    pck_add p
+    pck_add c
+  pck_end
+endloop
+on_finished:
+  cell_off
+

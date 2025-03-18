@@ -1,0 +1,21 @@
+e
+var c
+var p
+set_pgstat_chan 1
+set_pgstat_mode 0
+set_pgstat_chan 0
+set_pgstat_mode 2
+set_max_bandwidth 40
+set_range_minmax da -100m 1500m
+set_range ba 590u
+set_autoranging ba 73750n 2950u
+set_e -100m
+cell_on
+meas_loop_cv p c -100m -100m 1500m 10m 100m
+  pck_start
+    pck_add p
+    pck_add c
+  pck_end
+endloop
+on_finished:
+  cell_off

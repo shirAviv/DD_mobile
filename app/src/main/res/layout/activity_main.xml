@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2"
+    android:padding="16dp"
+    tools:context="com.example.app1.MainActivity">
+    <TableRow>
+    <ImageView
+        android:id="@+id/red_wine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:contentDescription="@string/red_wine"
+        android:onClick="onClickTestRedWine"
+        android:src="@drawable/red_wine" />
+
+    <ImageView
+        android:id="@+id/white_wine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:contentDescription="@string/white_wine"
+        android:onClick="onClickTestWhiteWine"
+        android:src="@drawable/white_wine" />
+    <ImageView
+        android:id="@+id/vodka"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_columnWeight="1"
+        android:contentDescription="@string/vodka"
+        android:onClick="onClickTestVodka"
+        android:src="@drawable/vodka" />
+    </TableRow>
+    <TableRow>
+    <ImageView
+        android:id="@+id/rum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:contentDescription="@string/rum"
+        android:onClick="onClickTestRum"
+        android:src="@drawable/rum" />
+    <ImageView
+        android:id="@+id/jin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:contentDescription="@string/jin"
+        android:onClick="onClickTestJin"
+        android:src="@drawable/jin" />
+
+    <ImageView
+        android:id="@+id/whiskey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:contentDescription="@string/whiskey"
+        android:onClick="onClickTestWhiskey"
+        android:src="@drawable/whiskey" />
+    </TableRow>
+</TableLayout>
+
+
