@@ -316,7 +316,7 @@ public class MainActivity extends AppCompatActivity {
                     else {
                         file_name=type+"_drop_"+drug+".csv";
                         writeReadingsToCSV(file_name);
-                        compare_currents("static",type);
+                        return(compare_currents("static",type));
                     }
                 }
             } else {
